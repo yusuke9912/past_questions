@@ -1,0 +1,238 @@
+body{
+    background: #fffef4;
+    font-size: 20px;
+   
+}
+
+h1{
+    margin-top: 100px;
+    margin-bottom: 160px;
+    font-size: 30px;
+}
+
+h2{
+    
+    text-align: left;
+    border-bottom:2px solid #efae2d;
+}
+
+h3{
+    margin-top: 50px;
+}
+
+ul{
+    margin-bottom: 50px;
+  position: relative;
+    
+}
+
+li{
+    
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+li:last-of-type{
+    margin-bottom: 0;
+}
+
+
+.container{
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto ;
+    padding: 50px;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+.btn{
+    border: 1px solid #555 ;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 10px 35px;
+    font-size: 18px;
+    background: #efae2d;
+    cursor: pointer;
+    
+
+}
+
+/* タイトル画面------------------------------------------------------------------ */
+
+.select-list{
+    
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto 0;
+}
+
+.select-list select{
+    font-size: 18px;
+}
+
+.select-list td{
+    width: 50%;
+    text-align: left;
+    padding: 5px;
+}
+.select-list td:nth-of-type(1){
+    text-align: center;
+}
+
+.btn.big-btn{
+    font-size: 20px;
+    padding: 15px 30px;
+}
+
+
+/* タイトル画面終わり------------------------------------------------------------------ */
+/* 問題画面---------------------------------------------------------------------------- */
+
+
+.btn-list{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.when{
+    font-size: 16px;
+    color:#777;
+     margin-bottom: 50px;
+     text-align: right;
+     
+}
+.fixed-btn{
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 50px;
+}
+
+
+/* 問題画面終わり------------------------------------------------------------------ */
+
+/* 答え合わせ画面------------------------------------------------------------------ */
+
+.check-answer{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+}
+.check-answer span:nth-of-type(1){
+    margin-right: 10px;
+}
+
+.result-mark{
+    width: 350px;
+    height: 350px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.circle{
+    border:20px solid rgba(255,0,0,.2);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.cross::before, .cross::after{
+    content: "";
+    display: block;
+    width: 100%;/*バツ線の長さ*/
+    height: 20px;/*バツ線の太さ*/
+    background: rgba(0,0,0,.2);
+    transform: rotate(45deg);
+    transform-origin:0% 50%;
+    position: absolute;
+    top: calc(14% - 5px);
+    left: 14%;
+}
+
+.cross::after{
+    transform: rotate(-45deg);
+    transform-origin:100% 50%;
+    left: auto;
+    right: 14%;
+}
+
+.next-btn{
+    display: block;
+    width: 200px;
+    margin: 40px auto 0;
+}
+
+/* 答え合わせ画面終わり------------------------------------------------------------------ */
+/* 結果画面------------------------------------------------------------------------ */
+.show-result{
+margin-top: 100px;
+margin-bottom: 50px;
+}
+
+.incorrectQuestions a{
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+/* 結果画面終わり------------------------------------------------------------------ */
+
+
+@media screen and (max-width: 500px) {
+    .container{
+        padding: 20px 30px 100px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    ul{
+        margin-bottom: 10px;
+    }
+    li{
+        font-size: 18px;
+    }
+    .number{
+        font-size: 15px;
+    }
+    .when{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    .btn{
+        margin-top: 30px;
+        padding: 5px 24px;
+    }
+    .next-btn{
+        margin-top: 20px;
+    }
+    .result-mark{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    h1{
+        font-size: 25px;
+        margin-bottom: 100px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    li{
+        font-size: 16px;
+    }
+     .btn{
+         padding: 5px 20px;
+     }
+}
+
