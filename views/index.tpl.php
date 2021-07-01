@@ -24,7 +24,7 @@
                             <select name="year" id="selectYear">
                                 <option value="r1aki">令和元年秋</option>
                                 <option value="h31haru">平成31年春</option>
-                                <option value="h30aki">平成30年秋</option>
+                                <!-- <option value="h30aki">平成30年秋</option> -->
                             </select>
                         </td>
                     </tr>
